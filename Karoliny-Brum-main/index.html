@@ -1,0 +1,880 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Karoliny Brum | Clínica de Estética</title>
+    <meta
+      name="description"
+      content="Clínica de estética premium em São Paulo. Tratamentos faciais, corporais e bem-estar com profissionais especializados."
+    />
+    <meta name="author" content="Karoliny Brum" />
+    <meta property="og:title" content="Karoliny Brum | Clínica de Estética" />
+    <meta property="og:description" content="Cuide de você com quem entende de beleza e bem-estar." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@200;300;400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./main.js"></script>
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <nav class="nav container">
+        <a class="brand" href="#home">
+          <div class="brand__logo">KB</div>
+          <div class="brand__text">
+            <span class="brand__name">KAROLINY BRUM</span>
+            <span class="brand__tagline">ESTÉTICA AVANÇADA</span>
+          </div>
+        </a>
+        <ul class="nav__links" data-desktop-links>
+          <li><a class="nav__link" href="#home">Home</a></li>
+          <li><a class="nav__link" href="#quem-somos">Quem Somos</a></li>
+          <li><a class="nav__link" href="#avaliacoes">Avaliações</a></li>
+          <li><a class="nav__link" href="#localizacao">Localização</a></li>
+          <li><a class="nav__link" href="#contato">Contato</a></li>
+        </ul>
+        <a class="btn btn--primary nav__cta" href="#contato">Agendar</a>
+        <button class="nav__toggle" type="button" aria-label="Menu" data-menu-toggle>
+          <i class="fas fa-bars" data-menu-icon></i>
+        </button>
+      </nav>
+      <div class="nav__mobile" data-mobile-menu aria-hidden="true">
+        <ul class="nav__mobile-list">
+          <li><a class="nav__mobile-link" href="#home" data-menu-link>Home</a></li>
+          <li><a class="nav__mobile-link" href="#quem-somos" data-menu-link>Quem Somos</a></li>
+          <li><a class="nav__mobile-link" href="#avaliacoes" data-menu-link>Avaliações</a></li>
+          <li><a class="nav__mobile-link" href="#localizacao" data-menu-link>Localização</a></li>
+          <li><a class="nav__mobile-link" href="#contato" data-menu-link>Contato</a></li>
+          <li>
+            <a class="btn btn--primary nav__mobile-cta" href="#contato" data-menu-link>
+              Agende sua consulta
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <a
+      class="whatsapp-fab"
+      href="https://wa.me/5527997958981?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20na%20cl%C3%ADnica.%20Poderia%20me%20ajudar%3F"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <i class="fab fa-whatsapp whatsapp-fab__icon"></i>
+      <span class="whatsapp-fab__text">Agende sua consulta</span>
+    </a>
+
+    <main>
+      <section id="home" class="section section--hero">
+        <div class="hero-watermark reveal">KB</div>
+        <div class="container hero">
+          <div class="hero__content">
+            <span class="subtitle reveal reveal-delay-1">Estética Avançada de Alto Padrão</span>
+            <h1 class="title hero__title reveal reveal-delay-2">
+              Onde a ciência e a arte se encontram para <br>
+              <em>realçar sua beleza única.</em>
+            </h1>
+            <p class="hero__lead reveal reveal-delay-3">
+              Procedimentos exclusivos e personalizados com a Dra. Karoliny Brum, 
+              focados em naturalidade, sofisticação e resultados excepcionais.
+            </p>
+            <div class="hero__actions reveal reveal-delay-3">
+              <a class="btn btn--primary" href="#contato">Agendar Avaliação</a>
+              <a class="btn btn--outline" href="#antes-depois">Ver Procedimentos</a>
+            </div>
+          </div>
+          <div class="hero__media reveal">
+            <div class="hero__image-wrapper">
+              <img
+                class="hero__image"
+                src="./images/IMG_6508.jpg"
+                alt="Dra. Karoliny Brum"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="container cards cards--3">
+          <article class="card reveal reveal-delay-1">
+            <div class="card__icon">
+              <i class="fas fa-user-doctor"></i>
+            </div>
+            <h3 class="card__title">Profissionais Especializados</h3>
+            <p class="card__text">
+              Equipe treinada e apaixonada pelo que faz, sempre atualizada com as melhores técnicas.
+            </p>
+          </article>
+          <article class="card reveal reveal-delay-2">
+            <div class="card__icon">
+              <i class="fas fa-microchip"></i>
+            </div>
+            <h3 class="card__title">Tecnologia de Ponta</h3>
+            <p class="card__text">
+              Equipamentos modernos que garantem segurança, conforto e resultados visíveis.
+            </p>
+          </article>
+          <article class="card reveal reveal-delay-3">
+            <div class="card__icon">
+              <i class="fas fa-spa"></i>
+            </div>
+            <h3 class="card__title">Conforto e Bem-Estar</h3>
+            <p class="card__text">
+              Um ambiente acolhedor e sofisticado, pensado para transformar sua experiência.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section id="quem-somos" class="section section--nude">
+        <div class="container section__head section__head--center reveal">
+          <span class="subtitle">Nossa Essência</span>
+          <h2 class="title">Excelência em cada detalhe</h2>
+          <p class="section__lead">
+            Fundada pela Dra. Karoliny Brum, nossa clínica é um refúgio de sofisticação onde cada 
+            procedimento é uma obra de arte. Buscamos a harmonia perfeita entre saúde e estética.
+          </p>
+        </div>
+        <div class="container cards cards--3">
+          <div class="card reveal reveal-delay-1">
+            <span class="card__hero-icon"><i class="fas fa-microscope"></i></span>
+            <h3 class="card__title">Ciência e Tecnologia</h3>
+            <p class="card__text">
+              Utilizamos os equipamentos mais modernos e as técnicas mais
+              avançadas para garantir resultados seguros e eficazes.
+            </p>
+          </div>
+          <div class="card reveal reveal-delay-2">
+            <span class="card__hero-icon"><i class="fas fa-magic"></i></span>
+            <h3 class="card__title">Naturalidade</h3>
+            <p class="card__text">
+              Nosso foco é realçar sua beleza de forma sutil, respeitando suas
+              características e promovendo um aspecto jovial e descansado.
+            </p>
+          </div>
+          <div class="card reveal reveal-delay-3">
+            <span class="card__hero-icon"><i class="fas fa-gem"></i></span>
+            <h3 class="card__title">Exclusividade</h3>
+            <p class="card__text">
+              Cada paciente é única. Nossos protocolos são 100% personalizados
+              para atender às suas necessidades e desejos específicos.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="avaliacoes" class="section">
+        <div class="container section__head section__head--center reveal">
+          <span class="subtitle">Depoimentos</span>
+          <h2 class="title">A experiência de nossas pacientes</h2>
+        </div>
+
+        <div class="container">
+          <div class="reviews reviews--desktop">
+            <article class="review card reveal reveal-delay-1">
+              <p class="review__text">
+                "Atendimento impecável! Saí da clínica me sentindo renovada. A Karoliny tem mãos de
+                fada e o ambiente é super acolhedor."
+              </p>
+              <div class="review__bottom">
+                <p class="review__name">Mariana Silva</p>
+              </div>
+            </article>
+
+            <article class="review card reveal reveal-delay-2">
+              <p class="review__text">
+                "Resultados incríveis no meu tratamento facial. Profissionais super preparadas e
+                tecnologia de ponta. Recomendo demais!"
+              </p>
+              <div class="review__bottom">
+                <p class="review__name">Juliana Costa</p>
+              </div>
+            </article>
+
+            <article class="review card reveal reveal-delay-3">
+              <p class="review__text">
+                "Me sinto em casa toda vez que venho. O cuidado com cada detalhe faz toda a
+                diferença. Minha autoestima agradece!"
+              </p>
+              <div class="review__bottom">
+                <p class="review__name">Patrícia Almeida</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="reviews reviews--mobile" data-review-carousel>
+            <article class="review card" data-review-card>
+              <div class="review__top">
+                <img class="review__avatar" alt="" loading="lazy" data-review-photo />
+                <div>
+                  <p class="review__name" data-review-name></p>
+                  <div class="review__stars" aria-hidden="true">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="review__text" data-review-text></p>
+            </article>
+
+            <div class="reviews__controls">
+              <button class="icon-btn" type="button" aria-label="Anterior" data-review-prev>
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <div class="reviews__dots" aria-hidden="true" data-review-dots></div>
+              <button class="icon-btn" type="button" aria-label="Próximo" data-review-next>
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABA: Antes e Depois (conteúdo principal) -->
+      <section class="aba-antes-depois" id="antes-depois" aria-labelledby="ab-title">
+        <div class="aba-antes-depois__container">
+          <header class="aba-antes-depois__hero">
+            <div class="ab-reveal" style="--d: 0">
+              <span class="aba-antes-depois__kicker">
+                <span class="aba-antes-depois__dot" aria-hidden="true"></span>
+                Antes &amp; Depois
+              </span>
+              <h2 class="aba-antes-depois__title" id="ab-title">
+                Transformações <strong>reais</strong>, com técnica e cuidado
+              </h2>
+              <p class="aba-antes-depois__lead">
+                Arraste a barra em cada caso para revelar o resultado. Clique para abrir o modal com
+                fotos maiores e detalhes do procedimento.
+              </p>
+            </div>
+
+            <div class="aba-antes-depois__meta ab-reveal" style="--d: 1">
+              <div class="aba-antes-depois__pill">
+                <i class="fas fa-hand-sparkles" aria-hidden="true"></i>
+                Scrub interativo (toque/arrastar)
+              </div>
+              <div class="aba-antes-depois__pill">
+                <i class="fas fa-shield-heart" aria-hidden="true"></i>
+                Protocolos personalizados
+              </div>
+            </div>
+          </header>
+
+          <div class="ab-timeline">
+            <div class="ab-grid" data-ab-grid>
+              <article
+                class="ab-card ab-reveal"
+                style="--d: 0"
+                data-tone="gold"
+                data-proc="Lipo sem cirurgia"
+                data-copy="Tecnologia e protocolos para definição corporal com foco em conforto e naturalidade."
+                data-focus="Resultados progressivos"
+                data-time="Sessões conforme avaliação"
+                data-before="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=1400&h=900&fit=crop"
+                data-after="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=1400&h=900&fit=crop&sat=20&con=10"
+              >
+                <div class="ab-card__head">
+                  <div class="ab-card__badge">Corpo</div>
+                  <div>
+                    <h3 class="ab-card__title">Lipo sem cirurgia</h3>
+                    <p class="ab-card__desc">
+                      Redução de medidas e contorno corporal com abordagem personalizada. Compare o
+                      antes e depois com o scrub.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="ab-compare" data-compare>
+                  <img class="ab-compare__img" alt="Antes" loading="lazy" />
+                  <div class="ab-compare__after">
+                    <img class="ab-compare__img" alt="Depois" loading="lazy" />
+                  </div>
+                  <div class="ab-compare__handle" aria-hidden="true">
+                    <span class="ab-compare__bar"></span>
+                    <span class="ab-compare__knob"><i class="fas fa-arrows-left-right"></i></span>
+                  </div>
+                  <div class="ab-compare__labels" aria-hidden="true">
+                    <span class="ab-compare__label">Antes</span>
+                    <span class="ab-compare__label">Depois</span>
+                  </div>
+                  <input
+                    class="ab-compare__range"
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="56"
+                    aria-label="Arraste para comparar o antes e depois"
+                  />
+                </div>
+
+                <div class="ab-card__actions">
+                  <button class="ab-btn ab-btn--primary" type="button" data-open>
+                    Ver detalhes <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                  </button>
+                  <button class="ab-btn ab-btn--ghost" type="button" data-jump>
+                    Ir para o scrub <i class="fas fa-wand-magic-sparkles" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </article>
+
+              <article
+                class="ab-card ab-reveal"
+                style="--d: 1"
+                data-tone="rose"
+                data-proc="Preenchimento labial"
+                data-copy="Harmonização com proporção e leveza. Realce do volume e contorno com naturalidade."
+                data-focus="Simetria e hidratação"
+                data-time="Procedimento rápido"
+                data-before="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=1400&h=900&fit=crop"
+                data-after="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=1400&h=900&fit=crop&sat=18&con=10"
+              >
+                <div class="ab-card__head">
+                  <div class="ab-card__badge">Face</div>
+                  <div>
+                    <h3 class="ab-card__title">Preenchimento labial</h3>
+                    <p class="ab-card__desc">
+                      Resultado “glossy” e equilibrado. Arraste a barra para comparar o contorno e o
+                      volume com precisão.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="ab-compare" data-compare>
+                  <img class="ab-compare__img" alt="Antes" loading="lazy" />
+                  <div class="ab-compare__after">
+                    <img class="ab-compare__img" alt="Depois" loading="lazy" />
+                  </div>
+                  <div class="ab-compare__handle" aria-hidden="true">
+                    <span class="ab-compare__bar"></span>
+                    <span class="ab-compare__knob"><i class="fas fa-arrows-left-right"></i></span>
+                  </div>
+                  <div class="ab-compare__labels" aria-hidden="true">
+                    <span class="ab-compare__label">Antes</span>
+                    <span class="ab-compare__label">Depois</span>
+                  </div>
+                  <input
+                    class="ab-compare__range"
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="52"
+                    aria-label="Arraste para comparar o antes e depois"
+                  />
+                </div>
+
+                <div class="ab-card__actions">
+                  <button class="ab-btn ab-btn--primary" type="button" data-open>
+                    Ver detalhes <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                  </button>
+                  <button class="ab-btn ab-btn--ghost" type="button" data-jump>
+                    Ir para o scrub <i class="fas fa-wand-magic-sparkles" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </article>
+
+              <article
+                class="ab-card ab-reveal"
+                style="--d: 2"
+                data-tone="mauve"
+                data-proc="Clareamento de axilas"
+                data-copy="Uniformização do tom com ativos e tecnologia, respeitando a sensibilidade da pele."
+                data-focus="Textura e luminosidade"
+                data-time="Plano contínuo"
+                data-before="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=1400&h=900&fit=crop"
+                data-after="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=1400&h=900&fit=crop&sat=14&con=8"
+              >
+                <div class="ab-card__head">
+                  <div class="ab-card__badge">Pele</div>
+                  <div>
+                    <h3 class="ab-card__title">Clareamento de axilas</h3>
+                    <p class="ab-card__desc">
+                      Protocolos delicados para uniformizar e iluminar. Um scrub com sensação “spotlight”
+                      ao mover o mouse.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="ab-compare" data-compare>
+                  <img class="ab-compare__img" alt="Antes" loading="lazy" />
+                  <div class="ab-compare__after">
+                    <img class="ab-compare__img" alt="Depois" loading="lazy" />
+                  </div>
+                  <div class="ab-compare__handle" aria-hidden="true">
+                    <span class="ab-compare__bar"></span>
+                    <span class="ab-compare__knob"><i class="fas fa-arrows-left-right"></i></span>
+                  </div>
+                  <div class="ab-compare__labels" aria-hidden="true">
+                    <span class="ab-compare__label">Antes</span>
+                    <span class="ab-compare__label">Depois</span>
+                  </div>
+                  <input
+                    class="ab-compare__range"
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="60"
+                    aria-label="Arraste para comparar o antes e depois"
+                  />
+                </div>
+
+                <div class="ab-card__actions">
+                  <button class="ab-btn ab-btn--primary" type="button" data-open>
+                    Ver detalhes <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                  </button>
+                  <button class="ab-btn ab-btn--ghost" type="button" data-jump>
+                    Ir para o scrub <i class="fas fa-wand-magic-sparkles" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="ab-surpresa ab-reveal" style="--d: 3">
+            <button class="ab-surpresa__btn" type="button" data-surpresa>
+              Surpreenda-me <i class="fas fa-dice" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+
+        <dialog class="ab-modal" data-modal>
+          <div class="ab-modal__top">
+            <h3 class="ab-modal__title" data-modal-title></h3>
+            <button class="ab-modal__close" type="button" data-modal-close aria-label="Fechar">
+              <i class="fas fa-xmark"></i>
+            </button>
+          </div>
+          <div class="ab-modal__body">
+            <div>
+              <p class="ab-modal__copy" data-modal-copy></p>
+              <ul class="ab-modal__list" data-modal-list></ul>
+              <div class="ab-modal__gallery" data-modal-gallery></div>
+            </div>
+            <aside class="ab-modal__side">
+              <h4>Observações</h4>
+              <p>
+                Os resultados variam de pessoa para pessoa. A avaliação profissional define o melhor
+                protocolo para seus objetivos.
+              </p>
+            </aside>
+          </div>
+        </dialog>
+
+        <script>
+          /* ===========================
+             JS da ABA "Antes e Depois" (vanilla)
+             - Comparator com scrub (range + drag em qualquer ponto)
+             - Modal reutilizável com dados do card
+             - Fundo reagindo ao mouse + scroll (microparallax)
+             - Reveal com IntersectionObserver (fade-up escalonado)
+             - Botão “Surpreenda-me”: escolhe um caso aleatório e abre o modal
+             - Cursor elegante opcional (apenas pointer fino)
+             =========================== */
+
+          (() => {
+            const root = document.querySelector(".aba-antes-depois");
+            if (!root) return;
+
+            const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+            const setVarsFromEvent = (el, ev, varX, varY) => {
+              const rect = el.getBoundingClientRect();
+              const x = ((ev.clientX - rect.left) / rect.width) * 100;
+              const y = ((ev.clientY - rect.top) / rect.height) * 100;
+              el.style.setProperty(varX, `${x}%`);
+              el.style.setProperty(varY, `${y}%`);
+            };
+
+            if (!prefersReduced) {
+              root.addEventListener(
+                "pointermove",
+                (ev) => {
+                  setVarsFromEvent(root, ev, "--ab-mx", "--ab-my");
+                },
+                { passive: true },
+              );
+            }
+
+            if (!prefersReduced) {
+              let raf = 0;
+              const onScroll = () => {
+                if (raf) return;
+                raf = requestAnimationFrame(() => {
+                  raf = 0;
+                  const rect = root.getBoundingClientRect();
+                  const progress = Math.min(1, Math.max(0, (0 - rect.top) / (rect.height * 0.9)));
+                  const sx = (progress - 0.5) * 60;
+                  const sy = (0.5 - progress) * 44;
+                  root.style.setProperty("--ab-sx", `${sx.toFixed(1)}px`);
+                  root.style.setProperty("--ab-sy", `${sy.toFixed(1)}px`);
+                });
+              };
+              onScroll();
+              window.addEventListener("scroll", onScroll, { passive: true });
+            }
+
+            const cards = Array.from(root.querySelectorAll(".ab-card"));
+            cards.forEach((card) => {
+              const beforeUrl = card.getAttribute("data-before") || "";
+              const afterUrl = card.getAttribute("data-after") || "";
+              const compare = card.querySelector("[data-compare]");
+              if (!compare) return;
+
+              const imgs = compare.querySelectorAll(".ab-compare__img");
+              if (imgs[0]) imgs[0].src = beforeUrl;
+              if (imgs[1]) imgs[1].src = afterUrl;
+
+              const range = compare.querySelector(".ab-compare__range");
+              const setPos = (value) => {
+                const v = Math.max(0, Math.min(100, value));
+                compare.style.setProperty("--pos", `${v}%`);
+                if (range) range.value = String(v);
+              };
+
+              if (range) {
+                range.addEventListener("input", (e) => setPos(Number(e.target.value)));
+              }
+
+              let dragging = false;
+              const updateFromPointer = (ev) => {
+                const rect = compare.getBoundingClientRect();
+                const x = ((ev.clientX - rect.left) / rect.width) * 100;
+                setPos(x);
+              };
+
+              compare.addEventListener("pointerdown", (ev) => {
+                dragging = true;
+                compare.setPointerCapture(ev.pointerId);
+                updateFromPointer(ev);
+              });
+
+              compare.addEventListener("pointermove", (ev) => {
+                if (!dragging) return;
+                updateFromPointer(ev);
+              });
+
+              compare.addEventListener("pointerup", () => {
+                dragging = false;
+              });
+
+              compare.addEventListener("pointercancel", () => {
+                dragging = false;
+              });
+
+              card.addEventListener(
+                "pointermove",
+                (ev) => {
+                  setVarsFromEvent(card, ev, "--mx", "--my");
+                },
+                { passive: true },
+              );
+
+              const jump = card.querySelector("[data-jump]");
+              if (jump) {
+                jump.addEventListener("click", () => {
+                  compare.scrollIntoView({ behavior: "smooth", block: "center" });
+                });
+              }
+            });
+
+            const modal = root.querySelector("[data-modal]");
+            const modalTitle = root.querySelector("[data-modal-title]");
+            const modalCopy = root.querySelector("[data-modal-copy]");
+            const modalList = root.querySelector("[data-modal-list]");
+            const modalGallery = root.querySelector("[data-modal-gallery]");
+            const closeBtn = root.querySelector("[data-modal-close]");
+
+            const openModalFromCard = (card) => {
+              if (!modal || !(modal instanceof HTMLDialogElement)) return;
+              if (!modalTitle || !modalCopy || !modalList || !modalGallery) return;
+
+              const proc = card.getAttribute("data-proc") || "Procedimento";
+              const copy = card.getAttribute("data-copy") || "";
+              const focus = card.getAttribute("data-focus") || "Avaliação personalizada";
+              const time = card.getAttribute("data-time") || "Sob avaliação";
+              const beforeUrl = card.getAttribute("data-before") || "";
+              const afterUrl = card.getAttribute("data-after") || "";
+
+              modalTitle.textContent = proc;
+              modalCopy.textContent = copy;
+              modalList.innerHTML = "";
+              ["Avaliação e plano individual", focus, time].forEach((t) => {
+                const li = document.createElement("li");
+                li.textContent = t;
+                modalList.appendChild(li);
+              });
+
+              modalGallery.innerHTML = "";
+              const makePhoto = (label, url) => {
+                const fig = document.createElement("figure");
+                fig.className = "ab-modal__photo";
+                const img = document.createElement("img");
+                img.src = url;
+                img.alt = `${proc} — ${label}`;
+                img.loading = "lazy";
+                const cap = document.createElement("figcaption");
+                cap.className = "ab-modal__cap";
+                cap.textContent = label;
+                fig.appendChild(img);
+                fig.appendChild(cap);
+                return fig;
+              };
+              modalGallery.appendChild(makePhoto("Antes", beforeUrl));
+              modalGallery.appendChild(makePhoto("Depois", afterUrl));
+
+              modal.showModal();
+            };
+
+            cards.forEach((card) => {
+              const open = card.querySelector("[data-open]");
+              if (open) open.addEventListener("click", () => openModalFromCard(card));
+              card.addEventListener("dblclick", () => openModalFromCard(card));
+            });
+
+            if (closeBtn) {
+              closeBtn.addEventListener("click", () => {
+                if (modal instanceof HTMLDialogElement) modal.close();
+              });
+            }
+
+            if (modal instanceof HTMLDialogElement) {
+              modal.addEventListener("click", (ev) => {
+                const rect = modal.getBoundingClientRect();
+                const inside =
+                  ev.clientX >= rect.left &&
+                  ev.clientX <= rect.right &&
+                  ev.clientY >= rect.top &&
+                  ev.clientY <= rect.bottom;
+                if (!inside) modal.close();
+              });
+            }
+
+            if ("IntersectionObserver" in window) {
+              const io = new IntersectionObserver(
+                (entries) => {
+                  entries.forEach((entry) => {
+                    if (!entry.isIntersecting) return;
+                    entry.target.classList.add("is-in");
+                    io.unobserve(entry.target);
+                  });
+                },
+                { threshold: 0.12, rootMargin: "0px 0px -8% 0px" },
+              );
+              root.querySelectorAll(".ab-reveal").forEach((el) => io.observe(el));
+            } else {
+              root.querySelectorAll(".ab-reveal").forEach((el) => el.classList.add("is-in"));
+            }
+
+            const surprise = root.querySelector("[data-surpresa]");
+            if (surprise) {
+              surprise.addEventListener("click", () => {
+                const card = cards[Math.floor(Math.random() * cards.length)];
+                if (!card) return;
+                card.scrollIntoView({ behavior: "smooth", block: "center" });
+                card.classList.add("ab-flash");
+                window.setTimeout(() => card.classList.remove("ab-flash"), 900);
+                window.setTimeout(() => openModalFromCard(card), 420);
+              });
+            }
+
+            const canCursor =
+              !prefersReduced &&
+              window.matchMedia("(pointer: fine)").matches &&
+              window.matchMedia("(hover: hover)").matches;
+
+            if (canCursor) {
+              root.classList.add("is-cursor");
+              const cursor = document.createElement("div");
+              cursor.className = "ab-cursor";
+              document.body.appendChild(cursor);
+
+              const activate = () => cursor.classList.add("is-active");
+              const deactivate = () => cursor.classList.remove("is-active");
+
+              root.addEventListener("pointerenter", () => {
+                cursor.style.opacity = "1";
+              });
+              root.addEventListener("pointerleave", () => {
+                cursor.style.opacity = "0";
+                deactivate();
+              });
+
+              root.addEventListener(
+                "pointermove",
+                (ev) => {
+                  cursor.style.transform = `translate3d(${ev.clientX}px, ${ev.clientY}px, 0)`;
+                },
+                { passive: true },
+              );
+
+              root.querySelectorAll("button, a, input, .ab-card").forEach((el) => {
+                el.addEventListener("pointerenter", activate);
+                el.addEventListener("pointerleave", deactivate);
+              });
+            }
+          })();
+        </script>
+      </section>
+
+      <section id="localizacao" class="section section--lilac">
+        <div class="container section__head section__head--center">
+          <h2 class="title title-underline">Localização</h2>
+        </div>
+        <div class="container split">
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3741.056!2d-40.3015547!3d-20.3332402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb8162450aea971%3A0x93e8237f8ba240b6!2sR.%20Walace%20Rodrigues%20de%20Freitas%2C%2095%20-%20Jaburuna%2C%20Vila%20Velha%20-%20ES%2C%2029100-630!5e0!3m2!1spt-BR!2sbr!4v1716800000000"
+              class="map__frame"
+              loading="lazy"
+              title="Mapa Karoliny Brum"
+            ></iframe>
+          </div>
+          <div class="panel">
+            <div class="info">
+              <div class="info__icon"><i class="fas fa-location-dot"></i></div>
+              <div>
+                <p class="info__title">Endereço</p>
+                <p class="info__text">
+                  Rua Walace Rodrigues de Freitas, n° 95, Térreo<br />
+                  Vila Velha - Es, 29100-630
+                </p>
+              </div>
+            </div>
+            <div class="info">
+              <div class="info__icon"><i class="fas fa-clock"></i></div>
+              <div>
+                <p class="info__title">Horário de Funcionamento</p>
+                <p class="info__text">
+                  Segunda a Sexta: 9h às 20h<br />
+                  Sábado: 9h às 16h
+                </p>
+              </div>
+            </div>
+            <div class="info">
+              <div class="info__icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <p class="info__title">Telefone</p>
+                <p class="info__text">
+                  <a
+                    href="https://wa.me/5527997958981?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20na%20cl%C3%ADnica.%20Poderia%20me%20ajudar%3F"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    (27) 997958981
+                  </a>
+                </p>
+              </div>
+            </div>
+            <a
+              href="https://wa.me/5527997958981?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20na%20cl%C3%ADnica."
+              class="btn btn--primary"
+              style="width: 100%; margin-top: 10px;"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-whatsapp"></i> Agendar pelo WhatsApp
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="contato" class="section">
+        <div class="container section__head section__head--center">
+          <h2 class="title title-underline">Contato</h2>
+          <p class="section__lead">Vamos conversar? Estamos prontas para acolher você.</p>
+        </div>
+
+        <div class="container split">
+          <div class="panel panel--lilac">
+            <div class="info">
+              <div class="info__icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <p class="info__title">Telefone</p>
+                <p class="info__text">
+                  <a
+                    href="https://wa.me/5527997958981?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20na%20cl%C3%ADnica.%20Poderia%20me%20ajudar%3F"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    (27) 997958981
+                  </a>
+                </p>
+              </div>
+            </div>
+            <div class="info">
+              <div class="info__icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <p class="info__title">Email</p>
+                <p class="info__text">karolinybrumesteticaavancada@gmail.com</p>
+              </div>
+            </div>
+            <div class="info">
+              <div class="info__icon"><i class="fas fa-location-dot"></i></div>
+              <div>
+                <p class="info__title">Endereço</p>
+                <p class="info__text">Rua Walace Rodrigues de Freitas, n° 95, Térreo<br />
+                  Vila Velha - ES, 29100-630</p>
+              </div>
+            </div>
+            <div class="info">
+              <div class="info__icon"><i class="fab fa-instagram"></i></div>
+              <div>
+                <p class="info__title">Instagram</p>
+                <p class="info__text">
+                  <a
+                    href="https://www.instagram.com/drakarolinybrum/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    @drakarolinybrum
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <form class="form panel" data-contact-form>
+            <input class="field" name="nome" placeholder="Seu nome" autocomplete="name" />
+            <input
+              class="field"
+              name="email"
+              placeholder="Seu email"
+              type="email"
+              autocomplete="email"
+            />
+            <input class="field" name="telefone" placeholder="Seu telefone" autocomplete="tel" />
+            <textarea class="field field--textarea" name="mensagem" placeholder="Sua mensagem"></textarea>
+            <button class="btn btn--primary form__submit" type="submit">
+              <i class="fab fa-whatsapp"></i> Agendar pelo WhatsApp
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer section--lilac">
+      <div class="container footer__inner">
+        <p class="footer__copy">© 2025 Karoliny Brum Clínica de Estética - Todos os direitos reservados</p>
+        <div class="footer__social">
+          <a
+            class="footer__icon"
+            href="https://www.instagram.com/drakarolinybrum/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+          >
+            <i class="fab fa-instagram"></i>
+          </a> 
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
