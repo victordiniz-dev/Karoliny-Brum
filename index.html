@@ -94,13 +94,23 @@
             </div>
           </div>
           <div class="hero__media reveal">
-            <div class="hero__image-wrapper">
-              <img
-                class="hero__image"
-                src="./images/IMG_6508.jpg"
-                alt="Dra. Karoliny Brum"
-                loading="lazy"
-              />
+            <div class="hero__image-wrapper hero-carousel-container" tabindex="0" aria-label="Galeria de imagens da Clínica Dra. Karoliny Brum">
+              <div class="hero-carousel" data-hero-carousel>
+                <div class="hero-carousel__slides" data-hero-carousel-slides>
+                  <!-- Os slides serão injetados dinamicamente via JavaScript para facilitar manutenção -->
+                </div>
+                
+                <!-- Navegação Manual: Setas -->
+                <button class="hero-carousel__btn hero-carousel__btn--prev" data-hero-carousel-prev aria-label="Ir para a imagem anterior">
+                  <i class="fas fa-chevron-left" aria-hidden="true"></i>
+                </button>
+                <button class="hero-carousel__btn hero-carousel__btn--next" data-hero-carousel-next aria-label="Ir para a próxima imagem">
+                  <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                </button>
+
+                <!-- Navegação Manual: Bolinhas (Dots) -->
+                <div class="hero-carousel__dots" data-hero-carousel-dots></div>
+              </div>
             </div>
           </div>
         </div>

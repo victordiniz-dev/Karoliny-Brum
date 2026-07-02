@@ -151,3 +151,156 @@
     });
   }
 })();
+
+// --- Hero Carousel Controller ---
+(() => {
+  const CAROUSEL_INTERVAL = 4500; // Tempo de transição em milissegundos (configurável)
+
+  const slidesData = [
+    {
+      src: "./images/IMG_6508.jpg",
+      alt: "Dra. Karoliny Brum sorrindo em seu consultório"
+    },
+    {
+      src: "./images/IMG_9991.jpeg",
+      alt: "Dra. Karoliny Brum em seu consultório"
+    },
+    {
+      src: "./images/IMG_9992.jpeg",
+      alt: "Ambiente luxuoso, relaxante e sofisticado da clínica de estética"
+    }
+  ];
+
+  const container = document.querySelector(".hero-carousel-container");
+  const slidesContainer = document.querySelector("[data-hero-carousel-slides]");
+  const dotsContainer = document.querySelector("[data-hero-carousel-dots]");
+  const prevBtn = document.querySelector("[data-hero-carousel-prev]");
+  const nextBtn = document.querySelector("[data-hero-carousel-next]");
+
+  if (!container || !slidesContainer || !dotsContainer || !prevBtn || !nextBtn) return;
+
+  let currentIndex = 0;
+  let autoplayTimer = null;
+  let isTransitioning = false;
+
+  // 1. Renderiza os slides dinamicamente
+  const renderSlides = () => {
+    slidesContainer.innerHTML = slidesData
+      .map((slide, index) => `
+        <div class="hero-carousel__slide ${index === 0 ? "is-active" : ""}" data-slide-index="${index}">
+          <img 
+            class="hero-carousel__image" 
+            src="${slide.src}" 
+            alt="${slide.alt}" 
+            loading="${index === 0 ? "eager" : "lazy"}" 
+            decoding="async"
+          />
+        </div>
+      `)
+      .join("");
+  };
+
+  // 2. Renderiza as bolinhas (dots)
+  const renderDots = () => {
+    dotsContainer.innerHTML = slidesData
+      .map((_, index) => `
+        <button 
+          class="hero-carousel__dot ${index === 0 ? "is-active" : ""}" 
+          data-dot-index="${index}" 
+          aria-label="Ir para o slide ${index + 1}"
+          type="button"
+        ></button>
+      `)
+      .join("");
+  };
+
+  renderSlides();
+  renderDots();
+
+  const slides = Array.from(slidesContainer.children);
+  const dots = Array.from(dotsContainer.children);
+
+  // 3. Função para mudar de slide com transição fade suave
+  const goToSlide = (nextIndex) => {
+    if (isTransitioning || nextIndex === currentIndex) return;
+    isTransitioning = true;
+
+    // Remove a classe ativa do slide e do dot atual
+    slides[currentIndex].classList.remove("is-active");
+    dots[currentIndex].classList.remove("is-active");
+
+    // Atualiza o índice
+    currentIndex = nextIndex;
+
+    // Adiciona a classe ativa no novo slide e dot
+    slides[currentIndex].classList.add("is-active");
+    dots[currentIndex].classList.add("is-active");
+
+    // Libera a transição após a animação de entrada do CSS (750ms)
+    setTimeout(() => {
+      isTransitioning = false;
+    }, 750);
+  };
+
+  const nextSlide = () => {
+    const nextIndex = (currentIndex + 1) % slidesData.length;
+    goToSlide(nextIndex);
+  };
+
+  const prevSlide = () => {
+    const prevIndex = (currentIndex - 1 + slidesData.length) % slidesData.length;
+    goToSlide(prevIndex);
+  };
+
+  // 4. Lógica de Autoplay
+  const startAutoplay = () => {
+    stopAutoplay();
+    autoplayTimer = setInterval(nextSlide, CAROUSEL_INTERVAL);
+  };
+
+  const stopAutoplay = () => {
+    if (autoplayTimer) {
+      clearInterval(autoplayTimer);
+      autoplayTimer = null;
+    }
+  };
+
+  // 5. Event Listeners de interação manual
+  prevBtn.addEventListener("click", () => {
+    prevSlide();
+    startAutoplay(); // Reinicia o temporizador ao interagir manualmente
+  });
+
+  nextBtn.addEventListener("click", () => {
+    nextSlide();
+    startAutoplay(); // Reinicia o temporizador ao interagir manualmente
+  });
+
+  dotsContainer.addEventListener("click", (e) => {
+    const dot = e.target.closest(".hero-carousel__dot");
+    if (!dot) return;
+    const index = parseInt(dot.getAttribute("data-dot-index"), 10);
+    goToSlide(index);
+    startAutoplay(); // Reinicia o temporizador ao interagir manualmente
+  });
+
+  // Pausar autoplay quando o mouse estiver sobre o carrossel
+  container.addEventListener("mouseenter", stopAutoplay);
+  container.addEventListener("mouseleave", startAutoplay);
+
+  // Navegação por teclado quando o contêiner do carrossel estiver em foco
+  container.addEventListener("keydown", (e) => {
+    if (e.key === "ArrowLeft") {
+      e.preventDefault();
+      prevSlide();
+      startAutoplay();
+    } else if (e.key === "ArrowRight") {
+      e.preventDefault();
+      nextSlide();
+      startAutoplay();
+    }
+  });
+
+  // Inicializa o Autoplay na carga da página
+  startAutoplay();
+})();
