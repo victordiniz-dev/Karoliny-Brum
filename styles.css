@@ -2200,11 +2200,13 @@ body {
   transform: scale(1.03);
 }
 
-/* --- Badge flutuante sobreposto à imagem --- */
+/* --- Badge flutuante — filho de .mentoria-vip__media (sem overflow:hidden) ---
+   left positivo garante que o badge fique 100% visível em desktop.
+   O efeito de 'sobreposto à imagem' vem do bottom baixo + z-index. */
 .mentoria-vip__badge {
   position: absolute;
   bottom: 28px;
-  left: -20px;
+  left: 16px;  /* positivo: badge não ultrapassa o limite do container */
   background: #ffffff;
   border: 1px solid rgba(212, 175, 55, 0.28);
   border-radius: 14px;
@@ -2212,12 +2214,13 @@ body {
   display: flex;
   align-items: center;
   gap: 12px;
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
   font-family: var(--font-sans);
   font-size: 0.8rem;
   font-weight: 300;
   line-height: 1.35;
   color: var(--foreground);
+  z-index: 3; /* acima da imagem */
 }
 
 .mentoria-vip__badge-icon {
